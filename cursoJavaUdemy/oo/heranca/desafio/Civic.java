@@ -1,13 +1,23 @@
 package oo.heranca.desafio;
 
-public class Civic extends Carro {
+public class Civic extends Carro implements Esportivo{
 
-	Civic() {
+	public Civic() {
 		super(212);
 	}
 
-	Civic(int velocidadeMaxima) {
+	public Civic(int velocidadeMaxima) {
 		super(velocidadeMaxima);
-		delta = 350;
+		delta = 15;
+	}
+
+	@Override
+	public void ligarTurbo() {
+		delta = 35;
+	}
+
+	@Override
+	public void desligarTurbo() {
+		delta = 15;
 	}
 }

@@ -2,7 +2,7 @@ package oo.heranca.desafio;
 
 public class Palio extends Carro {
 
-	Palio() {
+	public Palio() {
 		super(180);
 	}
 
